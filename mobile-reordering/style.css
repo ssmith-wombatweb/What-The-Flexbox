@@ -59,11 +59,6 @@ section, footer {
 }
 
 /* Flex Container */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .flex-nav ul {
   border:1px solid black;
   list-style: none;
@@ -95,8 +90,25 @@ section, footer {
 }
 
 @media all and (max-width:500px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
   .flex-nav {
     order: -1;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display: flex;
   }
 
   .flex-nav li {
