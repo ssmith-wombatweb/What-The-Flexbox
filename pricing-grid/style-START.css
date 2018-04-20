@@ -63,7 +63,7 @@ a {
 }
 
 .plan {
-  flex: 1;
+  flex: 1 0 210px;
   display: flex;
   flex-direction: column;
   text-align: center;
